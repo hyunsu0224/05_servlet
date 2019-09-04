@@ -22,7 +22,9 @@ public class HelloServlet extends HttpServlet {
 	 * 실제로 응답하는 메소드
 	 */
 	@Override
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request
+			, HttpServletResponse response) throws ServletException
+	, IOException {
 		
 		// 서블릿의 구조는
 		// 자바코드 안에 HTML 이 들어가는 형태
