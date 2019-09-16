@@ -32,9 +32,14 @@ public class RegisterServlet extends HttpServlet {
 		res.setContentType("text/html; charset=utf-8");
 		
 		// 03_registerForm.html 로 요청을 전달
-		RequestDispatcher reqd = req.getRequestDispatcher("03_registerForm.html");
+//		RequestDispatcher reqd = req.getRequestDispatcher("03_registerForm.html");
 		
-		reqd.forward(req, res);
+//		reqd.forward(req, res);
+		
+		// (2) sendRedirect 로 전달 : 주소표시줄에 주소가 변경됨
+		//							  /register 요청에 대한 응답이 일단 발생하고
+		//							  브라우저가 응답을 해석하여 자동 요청을 발생시키므로
+		res.sendRedirect("03_registerForm.html");
 	}
 
 	/**

@@ -20,7 +20,8 @@ public class LifeCycleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	// init(), service() 메소드의 
-	// 작동 확인을 위해 작동 횟수를 저장할 멤버 변수(원래 서블릿에서는 멤버변수를 쓰지 않지만 작동 확인을 위해 사용)
+	// 작동 확인을 위해 작동 횟수를 저장할 멤버 변수
+	// (원래 서블릿에서는 멤버변수를 쓰지 않지만 작동 확인을 위해 사용)
 	private int count;
 	
 	/**
